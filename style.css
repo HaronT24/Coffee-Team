@@ -1,0 +1,375 @@
+
+ /*FOOTER STYLES */
+footer {
+    background-color: #2D0052;
+    color: white;
+    padding: 20px 30px;
+    margin-top: auto; 
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #5A0DDA;
+}
+
+.footer-section a i {
+    margin-right: 10px;
+}
+
+.socials a {
+    font-size: 1.1rem;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #5A0DDA;
+}
+
+ /*INDEX STYLES */
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #2D0052, #4B0082);
+    color: white;
+    overflow-x: hidden;
+    min-height: 152.5vh; /* Ensures the body takes up the full height of the viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #5A0DDA;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #4B0082;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.hamburger-menu div {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.hamburger-menu a:hover {
+    color: #5A0DDA;
+}
+
+.hamburger-menu i {
+    margin-right: 10px;
+}
+
+.content {
+    flex: 1;  /* Takes up the remaining space */
+    text-align: left;
+    padding: 20px 30px;
+    max-width: 800px;
+    margin: 0;
+}
+
+.content h1 {
+    font-size: 3.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.content p span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.discover-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #5A0DDA;
+    padding: 15px 30px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.discover-btn i {
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: #2D0052;
+    color: white;
+    padding: 20px 30px;
+    margin-top: auto;  /* Pushes the footer to the bottom of the page */
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #5A0DDA;
+}
+
+.footer-section a i {
+    margin-right: 10px;
+}
+
+.socials a {
+    font-size: 1.1rem;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #5A0DDA;
+}
+
+@media (max-width: 768px) {
+footer {
+min-height: 50vh; /* Adjust footer height for smaller screens */
+}
+
+    .hamburger {
+        display: block;
+    }
+
+    #desktop-nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .hamburger-menu.open {
+        display: flex;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section a {
+        margin: 5px 0;
+    }
+
+    /* Remove separator after socials */
+    .footer-section:not(:last-child) {
+        border-bottom: 1px solid #5A0DDA;
+        padding-bottom: 20px;
+    }
+
+    /* No horizontal line for last section */
+    .socials {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    /* Move copyright higher for small screens */
+    .copyright {
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+
+    #desktop-nav {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: none !important;
+    }
+
+    /* Vertical lines in footer sections for desktop */
+    .footer-section {
+        border-right: 1px solid #5A0DDA;
+        padding-right: 20px;
+    }
+
+    .footer-section:last-child {
+        border-right: none;
+    }
+}
+
+.profile-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    margin-left: 20px;
+    position: relative;
+}
+
+.profile-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    background-color: #4B0082;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 150px;
+    margin-right: 10px;
+}
+
+.profile-menu .menu-section {
+    background-color: white;
+    color: #4B0082;
+    padding: 8px 0;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.profile-menu .menu-section:last-child {
+    margin-bottom: 0;
+}
+
+.profile-menu .menu-section:hover {
+    background-color: #f1f1f1;
+}
+
+.profile-menu a {
+    color: #4B0082;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.profile-menu a:hover {
+    color: #5A0DDA;
+}
+
+/*CONTACT US STYLES*/
